@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    text-align: center;
+    margin: 19px;
+    margin-left: 850px;
+    position: absolute;
+}
+header {
+    background-color: rgb(61, 61, 61);
+    width: 100vw;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
