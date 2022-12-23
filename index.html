@@ -18,8 +18,7 @@
     chat-title="Alebinha"
     agent-id="6a097c2c-3194-402b-b6c2-c9782564ee54"
     language-code="pt-br"
-    wait-open= true; 
-    expand= false;
+    wait-open= false; 
   ></df-messenger>
     
     
@@ -39,10 +38,6 @@
   df-messenger-user-message / Cor do segundo plano do balão para mensagens do usuário.
  -->
 
-
-
-
-
   <style>
     df-messenger {
      --df-messenger-bot-message: #479b3d;
@@ -56,6 +51,13 @@
      --df-messenger-input-placeholder-font-color: #292b26; 
     }
   </style>
+
+
+<script>
+  setTimeout(function(){ 
+    document.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").placeholder="Diga alguma coisa..." }, 1000);
+</script>
+
 
 <!--
                       Intenets e criar lista de transmissão
